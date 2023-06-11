@@ -1,0 +1,234 @@
+
+
+
+
+Quiz Questions
+
+Question: "Who was Isaac's father?"
+a: 'David';
+b: 'Joshua';
+c: 'Abraham';
+d: 'Zechariah';
+Correct Answer: c
+
+Question: "Who did the prophet Isaiah say would be born of a virgin, and be called "Immanuel"?"
+a: 'Jesus';
+b: 'Jael';
+c: 'Jericho';
+d: 'Zerubabel';
+Correct Answer: a
+
+Question: "How many of the 12 apostles were fishermen by trade?"
+a: 2
+b: 4
+c: 6
+d: 8
+Correct Answer: b
+
+Question: "What is the name of the parable in Luke 15 about a lost son?"
+a: "The Parable of the Prodigal Son"
+b: "The Parable of the Lost Sheep"
+c: "The Parable of the Lost Coin"
+d: "The Parable of the Good Samaritan"
+Correct Answer: a
+
+Question: "Who was the Roman Governor who sentenced Jesus to death?"
+a: "Nero"
+b: "Julius Caesar"
+c: "Pontius Pilate"
+d: "Augustus"
+Correct Answer: c
+
+Question: "Who was jealous of King David and tried to kill him?"
+a: Samuel
+b: Solomon
+c: Absalom
+d: Saul
+Correct Answer: d
+
+Question: "Who was the queen of Ethiopia and why did she go to Isreal?"
+a: "Queen Vashti, She came to offer her kingdom to Israel"
+b: "Queen Sheba, She came to hear the wisdom of King Solomon"
+c: "Queen Esther, She came to visit the temple in Jerusalem"
+d: "Queen Herodius, She came to challenge King Solomon"
+Correct Answer: b
+
+Question: "What was the name of the apostle Paul's traveling companion who was also a physician?"
+a: "Peter"
+b: "James"
+c: "Luke"
+d: "Mark"
+Correct Answer: d
+
+Question: "How many times is the word "faith" mentioned in the book of Hebrews?"
+a: 5
+b: 10
+c: 26
+d: 30
+Correct Answer: c
+
+Question: "What is the name of the prophet who was swallowed by a whale?"
+a: "Jonah"
+b: "Elijah"
+c: "Isaiah"
+d: "Daniel"
+Correct Answer: a
+
+Question: "How many commandments did God give to Moses on Mount Sinai?"
+a: 15
+b: 10
+c: 20
+d: 25
+Correct Answer: b
+
+Question: "What is the name of the disciple who betrayed Jesus?"
+a: "James"
+b: "Peter"
+c: "Judas"
+d: "Thomas"
+Correct Answer: c
+
+Question: "Who wrote the book of Proverbs in the Old Testament?"
+a: "Abraham"
+b: "David"
+c: "Moses"
+d: "Solomon"
+Correct Answer: d
+
+Question: "Who was the last judge of Israel before the monarchy was established?"
+a: "Samson"
+b: "Eli"
+c: "Samuel"
+d: "Gideon"
+Correct Answer: c
+
+Question: "What vehicle took Elijah up to heaven in a whirlwind?"
+a: "Wind"
+b: "Angels"
+c: "Yacht"
+d: "Chariot of fire"
+Correct Answer: d 
+
+
+
+
+
+
+
+<li>
+<label for="e" id="e text">Answer</label>
+<input type="radio" name="answer" id="e">
+</li>
+
+<li>
+<label for="f" id="f text">Answer</label>
+<input type="radio" name="answer" id="f">
+</li>
+
+<li>
+<label for="g" id="g text">Answer</label>
+<input type="radio" name="answer" id="g">
+</li>
+
+<li>
+<label for="h" id="h text">Answer</label>
+<input type="radio" name="answer" id="h">
+</li>
+
+<li>
+<label for="i" id="i text">Answer</label>
+<input type="radio" name="answer" id="i">
+</li>
+
+<li>
+<label for="j" id="j text">Answer</label>
+<input type="radio" name="answer" id="j">
+</li>
+
+<li>
+<label for="k" id="k text">Answer</label>
+<input type="radio" name="answer" id="k">
+</li>
+
+<li>
+<label for="l" id="l text">Answer</label>
+<input type="radio" name="answer" id="l">
+</li>
+
+<li>
+<label for="m" id="m text">Answer</label>
+<input type="radio" name="answer" id="m">
+</li>
+
+<li>
+<label for="n" id="n text">Answer</label>
+<input type="radio" name="answer" id="n">
+</li>
+
+<li>
+<label for="o" id="o text">Answer</label>
+<input type="radio" name="answer" id="o" class="answer">
+
+
+
+
+
+const quiz = document.getElementById('quiz');
+const answerEl = document.querySelectorAll('.answer');
+const questionEl = document.getElementById('question');
+const atext = document.getElementById('a-text');
+const btext = document.getElementById('b-text');
+const ctext = document.getElementById('c-text');
+const dtext = document.getElementById('d-text');
+const submitBtn = document.getElementById('submit');
+
+let currentQuiz = 0;
+let score = 0;
+
+function loadQuiz() {
+    deselectAnswers();
+
+    const currentQuizData = quizData[currentQuiz];
+
+    questionEl.innerText = currentQuizData.question;
+    atext.innerText = currentQuizData.a;
+    btext.innerText = currentQuizData.b;
+    ctext.innerText = currentQuizData.c;
+    dtext.innerText = currentQuizData.d;
+}
+
+function deselectAnswers() {
+    answerEl.forEach(answerEl => answerEl.checked = false);
+}
+
+function getSelected() {
+    let selected;
+    answerEl.forEach(answerEl => {
+        if(answerEl.checked) {
+            selected = answerEl.id;
+        }
+    });
+    return selected;
+}
+
+submitBtn.addEventListener('click', () => {
+    const selected = getSelected();
+    if(selected) {
+        if(selected === quizData[currentQuiz].correctAnswer) {
+            score++;
+        }
+
+        currentQuiz++;
+
+        if(currentQuiz < quizData.length) {
+            loadQuiz();
+        } else {
+            alert(`Quiz complete! Your score is ${score} out of ${quizData.length}`);
+        }
+        } else {
+            alert("Please select an answer");
+        }              
+    });
+            loadQuiz();
+
+

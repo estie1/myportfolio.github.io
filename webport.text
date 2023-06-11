@@ -1,0 +1,401 @@
+ <!--Home Section Design-->
+    <section class="home" id="home">
+        <div class="home-content"><br><br><br><br><br>
+            <h3 class="animation">Hi, I am</h3>
+            <h1 class="animation">Esther Dankwah-Coffie,<br></h1>
+      
+                <div class="letter-animation">
+                <h2>Software Developer</h2>
+             <br>
+                </div>
+       
+            <p class="animation">Welcome to my software development portfolio website! <br>
+                This website serves as a showcase of my skills, experience and achievements. Here, you will find a
+                collection of my projects, which demonstrate my technical capabilities and problem-solving skills. Each
+                project comes with a description, including the tools and technologies used.<br><br>
+                Whether you are a prospective client or employer, I hope that my portfolio will give you a better
+                understanding of my skills, experience and abilities as I develop further.<br><br>
+                Thank you for taking the time to visit my website. Please feel free to contact me if you have any
+                questions, suitable vacancies or would like to discuss a potential project.
+            </p> <br><br>
+
+            <a href="#" class="button animation">Download CV</a>
+        </div>
+    </section>
+
+    <!--About Section Design-->
+    <section class="about" id="about">
+        <div class="about-image">
+            <div class="fade-in-Top">
+                <img src="Images/laptop-g2caef07e5_1280.jpg" alt="">
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Software Developer</h3>
+            <p>I have always been fascinated by technology and the way it interacts with the world around us as well as
+                its ability to affect communities positively. My drive stems from the desire to create impactful
+                software that solves real-world problems and enhances the user experience.
+                I recognised my ability
+                to work with computers early on as well as my interest in design, so I did well in IT and Graphic design
+                in my GCSEs. Continuing this to A levels in college. I was unable to go beyond year 1, due to pressures
+                at the time. <br><br>
+                After my studies I ventured into Health and Social Care as I desired to support the vulnerable and
+                immediately recognised the advantage of my IT, Design and Research skills as it made my work efficient
+                and well presented. I am confident the skills I have obtained from working with families (some who can
+                be challenging), social work teams and other professionals from other organisations and the use of
+                technologies will serve me well in any setting that I become a part of. On the side I was using website
+                creation platforms such as Squarespace and Word Press to design websites and blogs for people to help
+                them out with their online representation. <br><br>
+                At the end of last year 2022, I decided to take the step and embark on completing a Software Development
+                Skills bootcamp with JustIt, to start pursuing a career in this field. I am very grateful for the
+                opportunity to learn more about coding and programming.<br><br>
+                Thank you for dropping by.
+            </p>
+        
+            <a href="#" class="button">Read More</a>
+        </div>
+    </div>
+</div>
+    </section>
+
+    <!--Project Section Design-->
+    <section class="projects" id="projects">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+
+        <div class="projects-container1">
+            <div class="projects-box1">
+                <img src="" alt="">
+
+                <div class="projects-icons">
+                    <a href=""><i class='bx bxl-html5'></i></a>
+                    <a href=""><i class='bx bxl-css3'></i></a>
+                    <a href=""><i class='bx bxl-javascript'></i></a>
+                </div>
+                <h4>Multiple Choice Quiz</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Impedit tempora aspernatur molestias recusandae nisi corrupti. Possimus.</p>
+                <a href="#"><i class="bx bx-link-external"></i></a>
+            </div>
+
+            <div class="projects-container2">
+                <div class="projects-box2">
+                    <img src="" alt="">
+
+                    <div class="projects-icons2">
+                        <a href=""><i class='bx bxl-python'></i></a>
+                        <a href="">
+                            <image src="Images/Untitled design1.svg"></i>
+                        </a>
+                        <a href="">
+                            <image src="Images/CRUD (1).svg"></i>
+                        </a>
+                    </div>
+                    <h4>MovieDB App</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                        Impedit tempora aspernatur molestias recusandae nisi corrupti. Possimus.</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact Section Design-->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Phone Number">
+                <input type="text" placeholder="Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="button">
+        </form>
+    </section>
+
+    <!--Footer Section Design-->
+    <footer class="footer" id="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; EDC 2023</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-arrow-from-bottom'></i></a>
+        </div>
+    </footer>
+
+    <!--Scroll Reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--Typed Text-->
+
+
+    <script src="Website port.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+/* .box-1 {
+    height: 300px;
+    width: 500px;
+    background-color: aqua;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px;
+}
+
+.box-2 {
+    height: 300px;
+    width: 500px;
+    background-color: purple;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+} */
+
+
+
+
+
+
+
+
+
+/* .projects h2 {
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+.projects-icons1 a i {
+    font-size: 2rem;
+    color: var(--second-bg-color);
+    text-align: center;
+}
+
+.projects-icons1 a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    margin-bottom: 1rem;
+    background: var(--main-color);
+    border-radius: .8rem;
+    transition: .5s ease;
+}
+
+.projects-icons1 a:hover {
+    box-shadow: 0 0 1rem var(--main-color);
+    cursor: default;
+}
+
+.projects-icons2 a i {
+    font-size: 2rem;
+    color: var(--second-bg-color);
+}
+
+.projects-icons2 a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    margin-bottom: 1rem;
+    background: var(--main-color);
+    border-radius: .8rem;
+    transition: .5s ease;
+}
+
+.projects-icons2 a:hover {
+    box-shadow: 0 0 1rem var(--main-color);
+    cursor: default;
+}
+
+
+.projects-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    max-width: 1200px;
+}
+
+.image-container {
+    width: 50%;
+    margin: 0 20px;
+    position: relative;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    width: 100%;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.caption h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.caption p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+} */
+
+
+
+
+
+
+
+
+/* .projects-container1 {
+    justify-content: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    align-items: center;
+    width: 1000px;
+    height: 300px;
+    box-shadow: 0 .1rem  .6rem var(--main-color);
+}
+
+
+
+.projects-container2 {
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 300px;
+}
+
+.projects-box2 {
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: 460px 305px; 
+    padding: 10rem 5rem 6rem;
+    width: 40%;
+    border-radius: 2rem;
+    text-align: center;
+    gap: 2rem;
+    border: .2rem solid var(--main-color)
+} */
+
+
+
+
+
+/* .projects-container1 {
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.projects-box1 {
+    border: .2rem solid var(--main-color);
+    padding: 10rem 5rem 6rem;
+    margin-bottom: 2rem;
+    margin-right: 15rem;
+    border-radius: 8px;
+    transition: all .45s ease;
+}
+
+.projects-container2 {
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+.projects-box2 {
+    border: .2rem solid var(--main-color);
+    padding: 10rem 5rem 6rem;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+    margin-right: 15rem;
+    border-radius: 8px;
+    transition: all .45s ease;
+} */
+
+
+.contact {
+    justify-content: center;
+    padding-top: 12rem;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    height: auto;
+    background: var(--second-bg-color);
+}
+
+.contact h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 4rem;
+    justify-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 50rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form.input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form.input-box input,
+.contact form textarea {
+    width: 100%;
+    padding: .8rem;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    background: var(--second-bg-color);
+    border-radius: .8rem;
+    margin: .7rem 0;
+    border: .2rem solid var(--main-color);
+}
+
+.contact form textarea {
+    resize: none;
+}
+
+.contact form.button {
+    margin-top: 2rem;
+    border: .2rem solid var(--main-color);
+    cursor: pointer;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bible Quiz</title>
+    <link rel="stylesheet" href="Quiz.css">
+</head>
+
+<body>
+    <div class="title-container">
+        <h1 style="text-align: center;"><u>Bible Quiz</u></h1>
+        <div class="quiz-container" id="quiz">
+            <div class="quiz-header">
+                <h3 style="text-align: left;" id="question">Question Text</h3>
+                <ul>
+                    <li>
+                        <input class="answer" type="radio" name="answer" id="a">
+                        <label for="a" id="optionA">OptionA</label>
+                    </li>
+
+                    <li>
+                        <input class="answer" type="radio" name="answer" id="b">
+                        <label for="b" id="optionB">OptionB</label>
+                    </li>
+
+                    <li>
+                        <input class="answer" type="radio" name="answer" id="c">
+                        <label for="c" id="optionC">OptionC</label>
+                    </li>
+
+                    <li>
+                        <input class="answer" type="radio" name="answer" id="d">
+                        <label for="d" id="optionD">optionD
+
+                        </label><br><br>
+                    </li>
+                </ul>
+
+                <button id="submit">Submit</button>
+            </div>
+            <div id="score" style="display: none;"></div>
+        </div>
+    </div>
+
+
+
+
+    <script src="Quiz.js"></script>
+</body>
+
+</html>
